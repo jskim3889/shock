@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shock</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="menu-item index"><a href="/index">오늘의 행사</a></li>
+  <li role="presentation" class="menu-item cal"><a href="/cal">달력</a></li>
+  <li role="presentation" class="menu-item cat"><a href="/cat">분류별</a></li>
+  <li role="presentation" class="menu-item gig"><a href="/gig">기관별</a></li>
+  <li role="presentation" class="menu-item search"><a href="/search">검색</a></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>
