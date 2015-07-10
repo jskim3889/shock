@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
+  resources :events
+
   get '/' => 'home#index'
   get '/index' => 'home#index'
   get '/cal' => 'home#cal'
   get '/cat' => 'home#cat'
   get '/gig' => 'home#gig'
-  get '/search' => 'home#search'    
+  get '/search' => 'home#search'  
+  get 'post/new'
+  post 'post/create'
+  get 'post/edit'
+  post 'post/update'  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+div.event_box{
+
+	display :inline-block;
+	vertical-align: middle;
+	margin:10px;
+	padding:0px;
+	border-color: black;
+	border-style: solid;
+	width:400px;
+	height:500px;
+}
+
+div img {
+	background-color: gray;
+margin:0px;
+padding:0px;
+width : 350px;
+height : 350px;
+}

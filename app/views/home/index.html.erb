@@ -1,1 +1,11 @@
-와글
+<br>
+<br>
+<br>
+
+    <% @posts.each do |b| %>
+        <div class="event_box">
+            <img src ="<%=b.picture.url%>">
+            <h1><%=b.name %></h1> <br>
+            <%=b.detail %>
+        </div>
+    <% end %>
