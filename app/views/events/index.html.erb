@@ -26,6 +26,12 @@
   </tbody>
 </table>
 
+<ol>
+  <% @titles.each_with_index do |x, i| %>
+    <li><%=i+1%> : <%=x.content%></li>
+  <% end %>
+</ol>
+
 <br>
 
 <%= link_to 'New Event', new_event_path %>
